@@ -1,5 +1,5 @@
 var g_Interval = 1;
-var g_PersonCount = 50000;//参加抽奖人数
+var g_PersonCount = 11;//参加抽奖人数
 var g_Timer;
 var running = false;
 var num;
@@ -21,7 +21,7 @@ function beginRndNum(trigger){
 }
 
 function updateRndNum(){
-	 num = Math.floor(Math.random()*g_PersonCount+10000);
+	 num = Math.floor(Math.random()*g_PersonCount);
 	$('#ResultNum').html(num);
 }
 
