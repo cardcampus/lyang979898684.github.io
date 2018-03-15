@@ -21,7 +21,7 @@ function beginRndNum(trigger){
 }
 
 function updateRndNum(){
-	 num = Math.floor(Math.random()*g_PersonCount);
+	 num = Math.floor(Math.random()*g_PersonCount+1);
 	$('#ResultNum').html(num);
 }
 
